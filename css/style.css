@@ -299,6 +299,10 @@ ul{
     align-items: center;
 }
 
+.minor .qr div.itm .qrcode, .minor .qr div.itm .ins{
+    visibility: hidden;
+}
+
 .minor .qr div .logo{
     width: 100px;
 }
