@@ -115,6 +115,10 @@ ul{
     background: #fff;
 }
 
+.card.-committtee{
+    width: 100%;
+}
+
 .card-header{
     background: #008036;
     color: #fff;
@@ -142,6 +146,10 @@ ul{
 
 .card-body .left ul li:nth-child(6){
     margin-bottom: 60px;
+}
+
+.card-body.-committtee .left ul li:nth-child(6){
+    margin-bottom: 16px;
 }
 
 .card-body .right{
@@ -207,4 +215,10 @@ ul{
     color: #fff;
     padding: 8px 9px;
     font-size: .8em;
+}
+
+/* speakers */
+.speakers{
+    max-height: 100%;
+    max-width: 100%;
 }
