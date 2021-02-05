@@ -12,6 +12,10 @@ body{
     width: 100%;
 }
 
+body.sp{
+    background: radial-gradient(#2c740287,#2c7402);
+}
+
 ul{
     padding: 0;
     margin: 0;
@@ -21,10 +25,18 @@ ul{
 .main-wrapper{
     max-width: 82rem;
     margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px){
+    .main-wrapper{
+        zoom: .8;
+    }
 }
 
 .main-wrapper.-officers{
     height: 100vh;
+    text-align: left;
 }
 
 .header{
@@ -162,63 +174,149 @@ ul{
     margin-bottom: 16px;
 }
 
-/* SPONSORS */
-.sponsors{
+/* speakers */
 
-}
-
-.sponsors .main-content{
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    margin-top: 35px;
-}
-
-.sponsors .head{
-    display: flex;
-    font-size: 1.4em;
+.speaker-title{
     font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
+    margin: 18px 0;
+}
+
+.speakers{
+    width: 80%;
+}
+
+/* SPONSORS */
+
+.sponsors .day1{
+    font-weight: bold;
+    color: #fff;
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+.sponsors .day1.-two{
     margin-top: 32px;
 }
 
-.sponsors .head .major{
-    margin-right: 33px;
-    text-align: center;
-}
-.sponsors .head .minor{
-    margin-top: 22px;
+.sponsors .main-content{
+    background: #ebf1e7;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 2em;
 }
 
-.sponsors .main-content div{
+.sponsors .footer{
+    font-size: 2em;
+    font-weight: bold;
+    font-style: italic;
+    background: #ebf1e7;
+    padding: 11px 0;
+    text-transform: uppercase;
+    color: #d00505;
+}
+
+/* major */
+.major{
+    text-align: center;
+    padding: 28px 0 28px 39px;
+}
+
+.major .name{
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3.2em;
+    margin-top: 83px;
+}
+
+.major .sp1{
+    max-width: 100%;
+    margin: 12px 0;
+}
+
+.major .qr{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    gap: 2em;
+    margin-top: 21px;
 }
 
-.sponsors .main-content div img{
-    max-width: 120px;
-}
-
-.sponsors .main-content div:nth-child(1) img{
-    margin-top: 22px;
-}
-
-.sponsors .main-content div .name{
-    text-align: center;
+.major .qr .head{
+    font-size: 1.1em;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.sponsors .main-content div a{
-    text-decoration: none;
-    background: #5aa609;
-    color: #fff;
-    padding: 8px 9px;
+.major .qr img{
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.major .qr .ins{
     font-size: .8em;
 }
 
-/* speakers */
-.speakers{
-    max-height: 100%;
-    max-width: 100%;
+.major .qr .ins span{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #d00303;
+}
+
+/* minor */
+
+.minor{
+    text-align: left;
+    padding: 28px 39px 28px 0;
+}
+
+.minor .name{
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.minor .qr{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 1em;
+}
+
+.minor .qr.-bottom{
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 31px;
+}
+
+.minor .qr div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minor .qr div .logo{
+    width: 100px;
+}
+
+.minor .qr div .qrcode{
+    margin: 10px 0;
+    width: 105px;
+    height: 105px;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.minor .qr .ins{
+    font-size: .8em;
+}
+
+.minor .qr .ins span{
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #d00303;
 }
